@@ -8,6 +8,7 @@
 ```bash
    python update_git_repos.py /path/to/directory
 ```
+![image](https://github.com/user-attachments/assets/93f2a994-b6d1-498d-8f1a-d38574339158)
 
 Скрипт импортирует необходимые модули: os для работы с файловой системой и subprocess для запуска команд в командной строке.
 

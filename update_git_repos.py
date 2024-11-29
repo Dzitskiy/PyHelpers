@@ -20,9 +20,6 @@ def update_git_repos(base_dir):
             if os.path.exists(os.path.join(dir_path, '.git')):
                 print(f"{Color.YELLOW}{dir_name}{Color.OFF}")
 
-            else:
-                print(dir_name)
-
             # Если это Git-репозиторий, обновляем его
             if os.path.exists(os.path.join(dir_path, '.git')):
                 try:

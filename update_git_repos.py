@@ -27,7 +27,15 @@ def update_git_repos(base_dir):
             if os.path.exists(os.path.join(dir_path, '.git')):
                 try:
                     os.chdir(dir_path)
-                    subprocess.run(['git', 'checkout', 'master'], check=True)
+
+                    # Проверяем наличие ветки master
+                    master_branch = 'master'
+                    branches = subprocess.run(['git', 'branch'], check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+                    if (branches.stdout.decode('utf-8').find(master_branch) == -1):
+                        master_branch = 'main'
+                    
+                    print(f"Update to: {Color.CYAN}{master_branch}{Color.OFF}")
+                    subprocess.run(['git', 'checkout', master_branch], check=True)
                     subprocess.run(['git', 'pull'], check=True)
                     print(f"Updated repository: {Color.GREEN}{dir_name}{Color.OFF}")
                 except subprocess.CalledProcessError as e:

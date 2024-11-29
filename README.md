@@ -5,14 +5,14 @@
 Скрипт для массого обновления Git-репозириев.
 
 Пример вызова:
-```
+```bash
    python update_git_repos.py /path/to/directory
 ```
 
 Скрипт импортирует необходимые модули: os для работы с файловой системой и subprocess для запуска команд в командной строке.
 
 Может потребоваться установка colorist:
-```
+```bash
   pip install colorist
   pip install --upgrade colorist
 ```

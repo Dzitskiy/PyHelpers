@@ -1,6 +1,10 @@
 # PyHelpers
 
-## update_git_repos 
+
+<details><summary> create_timesheet_template.py </summary>
+</details>
+
+<details><summary> update_git_repos.py </summary>
 
 Скрипт для массого обновления Git-репозириев.
 
@@ -31,3 +35,5 @@
   - Обновление репозитория с помощью subprocess.run(['git', 'pull'], check=True).
   - Вывод сообщения об обновлении в консоль:
     - Если возникает ошибка при выполнении команд Git - выводим сообщение об ошибке.
+
+</details>

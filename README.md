@@ -55,4 +55,6 @@
   python get_net_versions.py ../another-project
 ```
 
+![image](https://github.com/user-attachments/assets/0289a517-2c14-4867-8d6a-8e67f90c8a8e)
+
 </details>

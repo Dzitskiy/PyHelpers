@@ -37,3 +37,22 @@
     - Если возникает ошибка при выполнении команд Git - выводим сообщение об ошибке.
 
 </details>
+
+
+<details><summary> get_net_versions.py </summary>
+
+Скрипт для поиска .NET проектов и их версий.
+
+Примеры вызова:
+```bash
+  # Сканировать текущую директорию
+  python get_net_versions.py
+
+  # Сканировать конкретную директорию
+  python get_net_versions.py ~/projects/my-solution
+
+  # Сканировать относительный путь
+  python get_net_versions.py ../another-project
+```
+
+</details>
